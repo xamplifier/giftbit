@@ -1,0 +1,29 @@
+{
+    "name": "xamplifier/giftbit",
+    "description": "Giftbit library for Google APIs",
+    "type": "library",
+    "require": {
+        "php": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.5",
+        "larapack/dd": "^1.1"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Xamplifier\\giftbit\\": "src/"
+        }
+    },
+    "autoload-dev": {
+          "psr-4": {
+             "Xamplifier\\giftbit\\Test\\": "tests"
+         },
+        "authors": [
+            {
+                "name": "Apostolos Flessas",
+                "email": "abcy122@googlemail.com"
+            }
+        ]
+    }
+}
