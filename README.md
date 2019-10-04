@@ -1,1 +1,1 @@
-# Fetch Reviews Library
+# Giftbit's RESTFul API Library

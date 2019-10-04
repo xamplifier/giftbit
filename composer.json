@@ -3,7 +3,8 @@
     "description": "Giftbit library for Google APIs",
     "type": "library",
     "require": {
-        "php": "^7.0"
+        "php": "^7.0",
+        "guzzlehttp/guzzle": "^6.3"
     },
     "require-dev": {
         "phpunit/phpunit": "^7.5",
@@ -12,12 +13,13 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Xamplifier\\giftbit\\": "src/"
+            "Xamplifier\\Giftbit\\": "src/",
+            "Xamplifier\\Config\\": "config.php"
         }
     },
     "autoload-dev": {
           "psr-4": {
-             "Xamplifier\\giftbit\\Test\\": "tests"
+             "Xamplifier\\Giftbit\\Test\\": "tests"
          },
         "authors": [
             {
