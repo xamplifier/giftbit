@@ -14,25 +14,12 @@ class CampaignsTests extends TestCase
         $data = [];
 
         $data = [
-        'message' => "this is paok campaign",
-        "subject" => "paok",
-        "contacts" => [
-             ["firstname" => "Perry",
-             "lastname" => "Johnson",
-             "email" => "pjohnson@giftbit.com"]
-             ,
-             ["firstname"=> "Rita",
-             "lastname" => "Robson",
-             "email" => "robson@giftbit.com"]
-           ],
-         "price_in_cents" => 5000,
-         "brand_codes" => [
-           "itunesus",
-           "amazonus"
-         ],
-         "expiry" => "2019-12-01",
-         "id" => "abcy_".rand(1,1000)
-
+        "templateId" => 'PMKTNMETZUHB',
+        "firstName" => "AposTolis",
+        "lastName" => "Flessas",
+        "email" => "abcy122@googlemail.com",
+        "amount" => 5000,
+        "expiry" => "2019-12-01",
        ];
 
         $campaign = Campaigns::createCampaign($data);

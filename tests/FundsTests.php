@@ -18,7 +18,4 @@ class FundsTests extends TestCase
     }
 
 
-
-
-
 }

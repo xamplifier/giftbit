@@ -22,6 +22,19 @@ class Campaigns extends Giftbit
     {
         $gb = new Giftbit;
 
+        $data = [
+        "gift_template" => $data['templateId'],
+        "contacts" => [
+             ["firstname" => $data['firstName'],
+             "lastname" => $data['lastName'],
+             "email" => $data['email']]
+           ],
+         "price_in_cents" => $data['amount'],
+         "expiry" => $data['expiry'],
+         "id" => "xamplifier_".rand(1,1000)
+
+       ];
+
         return $gb->execute(self::OBJECT_NAME, $data, "POST", 'json');
     }
 
@@ -31,7 +44,7 @@ class Campaigns extends Giftbit
     *
     * @param array $data
     * @param string $campaignId
-    * 
+    *
     * @return array
     */
     public static function getCampaign(string $campaignId, array $data = []):array
