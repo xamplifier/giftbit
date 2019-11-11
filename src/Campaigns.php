@@ -30,7 +30,6 @@ class Campaigns extends Giftbit
              "email" => $data['email']]
            ],
          "price_in_cents" => $data['amount'],
-         "expiry" => $data['expiry'],
          "id" => "xamplifier_".rand(1,1000)
 
        ];
