@@ -8,7 +8,7 @@ class Giftbit
 {
 
     protected const TEST_URL = 'https://api-testbed.giftbit.com/papi/v1/';
-    protected const PROD_URL = 'https://api.giftbit.com/papi/v1';
+    protected const PROD_URL = 'https://api.giftbit.com/papi/v1/';
 
 
     /**
@@ -23,12 +23,13 @@ class Giftbit
     */
     protected function execute(string $url, array $data = [], string $requestMethod, string $requestType) :array
     {
-        $config = include('config.php');
 
-        $client = new \GuzzleHttp\Client(['base_uri' => self::TEST_URL]);
+        $config = include('../config.php');
+        $giftbitURL = constant("self::".ENVIROMENT);
+        $client = new \GuzzleHttp\Client(['base_uri' => $giftbitURL]);
 
         $headers = [
-          'Authorization' => 'Bearer ' . $config['token'],
+          'Authorization' => 'Bearer ' . GIFTBIT_TOKEN,
           'Accept'        => 'application/json',
           'Content-Type'  => 'application/json',
         ];
