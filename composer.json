@@ -3,11 +3,11 @@
     "description": "Giftbit library for Google APIs",
     "type": "library",
     "require": {
-        "php": "^7.0",
-        "guzzlehttp/guzzle": "^6.3"
+        "php": "^8.0",
+        "guzzlehttp/guzzle": "^6.5.5"
     },
     "require-dev": {
-        "phpunit/phpunit": "^7.5",
+        "phpunit/phpunit": "^9.5",
         "larapack/dd": "^1.1"
     },
     "license": "MIT",
